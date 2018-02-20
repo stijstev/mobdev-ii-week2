@@ -6,6 +6,15 @@
   "author": "stijstev <stijstev@student.arteveldehs.be>",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.16.2",
+    "path": "^0.12.7",
     "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.15.1"
+  },
+  "scripts": {
+    "start": "echo 'Server started in production mode' & NODE_ENV=production node server.js",
+    "start-dev": "echo 'Server started in development mode' & NODE_ENV=development nodemon --config nodemon.json server.js"
   }
 }
