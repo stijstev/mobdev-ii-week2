@@ -1,0 +1,11 @@
+{
+  "name": "WEEK2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/stijstev/mobdev-ii-week2.git",
+  "author": "stijstev <stijstev@student.arteveldehs.be>",
+  "license": "MIT",
+  "dependencies": {
+    "url": "^0.11.0"
+  }
+}
