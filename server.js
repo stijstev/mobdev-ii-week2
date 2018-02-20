@@ -1,6 +1,7 @@
 const http = require('http');
 const express = require('express');
 const path = require('path');
+const logger = require('morgan');
 const app = express();
 const server = http.createServer(app);
 
@@ -12,7 +13,8 @@ const hostName = '127.0.0.1';
 const port = '8080';
 
 
-app.use(express.static(path.join(__dirname, 'client/build')))
+app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(logger('dev'));
 
 app.get('/', (req, resp) => {
     resp.send('Hello world!')
